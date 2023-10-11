@@ -11,18 +11,18 @@
 </head>
 <body>
     <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Epic Task</a>
+        <div class="nav-wrapper yellow">
+          <a href="#" class="brand-logo ">News2Day</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="index.html">Tarefas</a></li>
-            <li class="active"><a href="cadastrar.html">Criar tarefa</a></li>
+            <li><a href="index.html">Notícia</a></li>
+            <li class="active"><a href="cadastrar.html">Criar notícia</a></li>
             <li><a href="perfil.html">Perfil</a></li>
           </ul>
         </div>
       </nav>
 
       <main class="container">
-        <h4>Nova tarefa</h4>
+        <h4>Nova notícia</h4>
 
         <div class="row">
           <form class="col s12">
@@ -31,7 +31,7 @@
               <div class="input-field col s12">
                 <input id="titulo" type="text" class="validate" minlength="3">
                 <label for="titulo">titulo</label>
-                <span class="helper-text" data-error="Título muito curto. Preencha o título com pelo menos 3 caracteres." data-success="">Digite o título da tarefa</span>
+                <span class="helper-text" data-error="Título muito curto. Preencha o título com pelo menos 3 caracteres." data-success="">Digite o título da Notícia</span>
               </div>
             </div>
 
@@ -44,9 +44,23 @@
 
             <div class="row">
               <div class="input-field col s12">
-                <input id="pontos" type="number" class="validate" min="1" max="100">
-                <label for="pontos">Pontos</label>
-                <span class="helper-text" data-error="Pontuação inválida. Informe uma pontuação entre 1 e 100." data-success="">Digite a pontuação</span>
+                <input id="fonte" type="number" class="validate" min="1" max="10">
+                <label for="fonte">Digite um número entre 1 e 10</label>
+                <span class="helper-text" data-error="Pontuação inválida. Informe uma pontuação entre 1 e 10." data-success="">Dê uma nota para a notícia</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="fonte" type="text" class="validate" min="1" max="100">
+                <label for="fonte">Imagem</label>
+                <span class="helper-text" data-error="Pontuação inválida. Informe uma pontuação entre 1 e 100." data-success="">Informe a url da imagem</span>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col">
+                <a href="index.html" class="btn blue teste">Nova imagem</a>
               </div>
             </div>
 
@@ -58,7 +72,6 @@
                 <a href="index.html" class="btn green">Salvar</a>
               </div>
             </div>
-
           </form>
         </div>
       </main>
