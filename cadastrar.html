@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="assets/js/cadastrar.js"></script>
+    <script src="assets/js/cadastrar.js" defer></script>
     <title>EpicTask</title>
 </head>
 
@@ -27,7 +27,7 @@
         <h4>Nova notícia</h4>
 
         <div class="row">
-          <form class="col s12">
+          <div class="col s12">
 
             <div class="row">
               <div class="input-field col s12">
@@ -46,16 +46,16 @@
 
             <div class="row">
               <div class="input-field col s12">
-                <input id="fonte" type="number" class="validate" min="1" max="10">
-                <label for="fonte">Digite um número entre 1 e 10</label>
+                <input id="nota" type="number" class="validate" min="1" max="10">
+                <label for="nota">Digite um número entre 1 e 10</label>
                 <span class="helper-text" data-error="Pontuação inválida. Informe uma pontuação entre 1 e 10." data-success="">Dê uma nota para a notícia</span>
               </div>
             </div>
 
             <div class="row">
               <div class="input-field col s12">
-                <input id="fonte" type="text" class="validate" min="1" max="100">
-                <label for="fonte">Imagem</label>
+                <input id="imagem" type="text" class="validate" min="1" max="100">
+                <label for="imagem">Imagem</label>
                 <span class="helper-text" data-error="Pontuação inválida. Informe uma pontuação entre 1 e 100." data-success="">Informe a url da imagem</span>
               </div>
             </div>
@@ -71,10 +71,10 @@
                 <a href="index.html" class="btn grey teste">Cancelar</a>
               </div>
               <div class="col">
-                <button href="index.html" class="btn green">Salvar</button>
+                <button id="botao-cadastrar" class="btn green">Salvar</button>
               </div>
             </div>
-          </form>
+          </div>
         </div>
       </main>
 
