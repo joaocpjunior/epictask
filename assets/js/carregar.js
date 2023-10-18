@@ -11,6 +11,8 @@ function criarCard(tarefa) {
         <div class="card-content">
             <span class="card-title">${tarefa.titulo}</span>
             <p>${tarefa.descricao}</p>
+            <p>${tarefa.nota}</p>
+            <img src="${tarefa.imagem}" alt="">
         </div>
     </div> 
     `
