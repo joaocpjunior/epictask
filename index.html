@@ -1,43 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="assets/js/carregar.js"></script>
-    <script src="assets/js/concluir.js" defer></script>
-    <script src="assets/js/apagar.js" defer></script>
-    
-    <title>EpicTask</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="assets/js/carregar.js"></script>
+  <script src="assets/js/concluir.js" defer></script>
+  <script src="assets/js/apagar.js" defer></script>
+  <script src="assets/js/dashboard.js" defer></script>
+
+
+  <title>EpicTask</title>
 </head>
+
 <body>
-    <nav>
-        <div class="nav-wrapper yellow">
-          <a href="#" class="brand-logo">News2Day</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="active"><a href="/">Notícias</a></li>
-            <li><a href="cadastrar.html">Criar Notícia</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-          </ul>
+  <nav>
+    <div class="nav-wrapper yellow">
+      <a href="#" class="brand-logo">News2Day</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="active"><a href="/">Notícias</a></li>
+        <li><a href="cadastrar.html">Criar Notícia</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="row">
+      <div class="col s12 m6 l3">
+        <div class="card-panel pink white-text">
+          <h3 id="qtde-pendente">0</h3>
+          <span>tarefa pendentes center</span>
         </div>
-      </nav>
-
-      <main class="container">
-        <h4>Lista de Notícias</h4>
-
-        <div class="row" id="lista-tarefas">
-           
-        </div>
-
-      </main>
-
-      <div class="fixed-action-btn">
-        <a href="cadastrar.html" class="btn-floating btn-large yellow">
-          <i class="large material-icons">add</i>
-        </a>
       </div>
 
+
+      <div class="col s12 m6 l3">
+        <div class="card-panel center teal">
+          <h3 id="qtde-concluida">0</h3>
+          <span>tarefas concluídas</span>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card-panel pink white-text">
+          <h3 id="total-pontos">0</h3>
+          <span>total de pontos</span>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card-panel pink white-text">
+          <h3 id="total-pontos">0</h3>
+          <span>total de pontos</span>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+    
+
+
+    <h4>Lista de Notícias</h4>
+
+    <div class="row" id="lista-tarefas">
+
+    </div>
+
+  </main>
+
+  <div class="fixed-action-btn">
+    <a href="cadastrar.html" class="btn-floating btn-large yellow">
+      <i class="large material-icons">add</i>
+    </a>
+  </div>
+
 </body>
+
 </html>

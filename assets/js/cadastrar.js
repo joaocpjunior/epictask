@@ -16,5 +16,6 @@ document.querySelector("#botao-cadastrar").addEventListener("click", ()=>{
     localStorage.setItem("tarefa", JSON.stringify(tarefas))
     
     window.location.href = "index.html"
+    calcularEstatistica()
 })
 
